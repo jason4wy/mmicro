@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package io.github.jason4wy.srv.user;
+
+service User {
+    rpc QueryUserByID(QueryRequest) returns (QueryResponse) {}
+}
+
+message UserInfo {
+   string user_id = 1;
+   string nickname = 2;
+   string mobile = 3;
+   string avatar_url = 4;
+   int32 gender = 5;
+   uint32 created_at = 6;
+   uint32 updated_at = 7;
+   // google.protobuf.Timestamp created_at = 6;
+   // google.protobuf.Timestamp updated_at = 7;
+}
+
+message Error {
+   string msg = 1;
+   string info = 2;
+}
+
+message QueryRequest {
+   string user_id = 1;
+
+}
+
+message QueryResponse {
+   uint32 code = 1;
+   Error error = 2;
+   UserInfo data = 3;
+}
