@@ -3,7 +3,7 @@ package handler
 import (
 	"context"
 
-	"github.com/micro/go-micro/util/log"
+	//"github.com/micro/go-micro/util/log"
 
 	user "github.com/jason4wy/mmicro/user/srv/proto/user"
 )

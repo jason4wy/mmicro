@@ -3,9 +3,8 @@ package main
 import (
 	"github.com/micro/go-micro/util/log"
 	"github.com/micro/go-micro"
-	"user/srv/handler"
-	"user/srv/subscriber"
-
+	"github.com/jason4wy/mmicro/user/srv/handler"
+	//"github.com/jason4wy/mmicro/user/srv/subscriber"
 	user "github.com/jason4wy/mmicro/user/srv/proto/user"
 )
 
