@@ -18,7 +18,7 @@ func UserFromContext(ctx context.Context) (user.UserService, bool) {
 
 // Client returns a wrapper for the UserClient
 func UserWrapper(service micro.Service) server.HandlerWrapper {
-	client := user.NewUserService("go.micro.srv.template", service.Client())
+	client := user.NewUserService("io.github.jason4wy.srv.user", service.Client())
 
 	return func(fn server.HandlerFunc) server.HandlerFunc {
 		return func(ctx context.Context, req server.Request, rsp interface{}) error {
