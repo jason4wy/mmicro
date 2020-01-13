@@ -5,7 +5,7 @@ This is the Hello service
 Generated with
 
 ```
-micro new hello/srv --namespace=github.jason4wy --alias=hello --type=srv
+micro new hello/srv --namespace=io.github.jason4wy --alias=hello --type=srv
 ```
 
 ## Getting Started
@@ -16,7 +16,7 @@ micro new hello/srv --namespace=github.jason4wy --alias=hello --type=srv
 
 ## Configuration
 
-- FQDN: github.jason4wy.srv.hello
+- FQDN: io.github.jason4wy.srv.hello
 - Type: srv
 - Alias: hello
 

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package github.jason4wy.srv.hello;
+package io.github.jason4wy.srv.hello;
 
 service Hello {
 	rpc Call(Request) returns (Response) {}

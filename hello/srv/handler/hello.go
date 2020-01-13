@@ -5,7 +5,7 @@ import (
 
 	"github.com/micro/go-micro/util/log"
 
-	hello "hello/srv/proto/hello"
+	hello "github.com/jason4wy/mmicro/hello/srv/proto/hello"
 )
 
 type Hello struct{}
