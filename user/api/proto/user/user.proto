@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package io.github.jason4wy.api.user;
+
+import "github.com/micro/go-micro/api/proto/api.proto";
+
+service User {
+	rpc Info(go.api.Request) returns (go.api.Response) {}
+}
