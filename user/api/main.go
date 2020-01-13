@@ -7,7 +7,7 @@ import (
 	"github.com/jason4wy/mmicro/user/api/handler"
 	"github.com/jason4wy/mmicro/user/api/client"
 
-	user "user/api/proto/user"
+	user "github.com/jason4wy/mmicro/user/api/proto/user"
 )
 
 func main() {
