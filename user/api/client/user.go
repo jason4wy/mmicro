@@ -5,7 +5,7 @@ import (
 
 	"github.com/micro/go-micro"
 	"github.com/micro/go-micro/server"
-	user "github.com/jason4wy/mmicro/uer/srv/proto/user"
+	user "github.com/jason4wy/mmicro/user/srv/proto/user"
 )
 
 type userKey struct {}
