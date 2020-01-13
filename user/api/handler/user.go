@@ -30,7 +30,7 @@ func (e *User) Info(ctx context.Context, req *api.Request, rsp *api.Response) er
     // extract the client from the context
     userClient, ok := client.UserFromContext(ctx)
     if !ok {
-        return errors.InternalServerError("io.github.entere.api.user.info", "user client not found")
+        return errors.InternalServerError("io.github.jason4wy.api.user.info", "user client not found")
     }
 
     // make request
@@ -38,7 +38,7 @@ func (e *User) Info(ctx context.Context, req *api.Request, rsp *api.Response) er
         UserId: extractValue(req.Post["user_id"]),
     })
     if err != nil {
-        return errors.InternalServerError("io.github.entere.api.user.user.call", err.Error())
+        return errors.InternalServerError("io.github.jason4wy.api.user.user.call", err.Error())
     }
 
     b, _ := json.Marshal(response)
